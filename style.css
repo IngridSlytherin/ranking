@@ -1,0 +1,144 @@
+/* Flex Container */
+.container {
+	max-width: 400px;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+	flex-wrap: wrap;
+	align-items: flex-end; /*bottom to top*/
+}
+
+@media screen and (max-width: 992px) and (min-width: 200px;) {
+  .container {
+    flex: 50%;
+  }
+}
+
+/* Flex Item */
+.primeira {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+	box-shadow: 0 0 9px 0 #999;
+}
+
+@media screen and (max-width: 992px) and (min-width: 200px;) {
+  .primeira {
+    flex: 50%;
+  }
+}
+
+.segunda {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+@media screen and (max-width: 992px) and (min-width: 200px;) {
+  .segunda {
+    flex: 50%;
+  }
+}
+
+.terceira {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+
+} 
+
+@media screen and (max-width: 992px) and (min-width: 200px;) {
+  .terceira {
+    flex: 50%;
+  }
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+
+
+  /*div {
+  display: block;
+  margin: 10px 0;
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  animation-direction: alternate-reverse;
+  animation-play-state: running; 
+
+}*/
+
+.primeira { animation: animacao 5s ease forwards alternate; }
+.segunda { animation: animacaoBolada ease 5s forwards alternate; }
+.terceira {animation: animacaoter 5s ease forwards alternate;}
+
+
+/* Segunda */
+@keyframes animacao {
+   from { 
+    background: black;
+    height: 0%;
+  }
+   to { 
+    background: yellow;
+    height: 75%;
+  }
+}
+
+/* Terceira */
+@keyframes animacaoter {
+   from { 
+    background: black;
+    height: 0%;
+  }
+   to { 
+    background: yellow;
+    height: 65%;
+  }
+}
+
+/* Primeira */
+@keyframes animacaoBolada {
+   from { 
+    background: black;
+    height: 0%;
+  }
+   to { 
+    background: yellow;
+    height: 85%;
+  }
+}
+
+
+/* @keyframes animacaoBolada {
+  0%   { 
+    background: black;
+    height: 200%;
+  }
+  25%  { background: purple; }
+  50%  { background: blue; }
+  75%  { background: red; }
+  100% { 
+    background: purple;
+    height: 200px;
+  }
+}*/
